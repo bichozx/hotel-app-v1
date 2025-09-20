@@ -1,31 +1,5 @@
 import Room from './Room';
-
-let rooms = [
-  {
-    name: 'Single Room',
-    id: 1,
-    price: 99,
-    type: 'Single Room',
-    image: 'https://www.w3schools.com/w3images/room_single.jpg',
-    size: '15m²',
-  },
-  {
-    name: 'Double Room',
-    id: 2,
-    price: 149,
-    type: 'Couple Room',
-    image: 'https://www.w3schools.com/w3images/room_deluxe.jpg',
-    size: '25m²',
-  },
-  {
-    name: 'Deluxe Room',
-    id: 3,
-    price: 199,
-    type: 'Family Room',
-    image: 'https://www.w3schools.com/w3images/room_double.jpg',
-    size: '40m²',
-  },
-];
+import roomss from "../data/roomsData.js";
 
 export default function Rooms() {
   return (
@@ -79,7 +53,7 @@ export default function Rooms() {
         </div>
       </div>
       <div className="w3-row-padding w3-padding-16">
-        {rooms.map((data) => (
+        {roomss.map((data) => (
           <Room dataRoom={data} key={data.id} />
         ))}
       </div>

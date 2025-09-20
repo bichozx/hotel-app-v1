@@ -10,7 +10,7 @@ export default function Room({dataRoom}) {
   return (
     <>
         <div className="w3-third w3-margin-bottom">
-            <img src={image} alt="Norway" style={{"width":"100%"}} />
+            <img src={image[0]} alt="name" style={{"width":"100%"}} />
             <div className="w3-container w3-white">
                 <h3>{name}</h3>
                 <h6 className="w3-opacity">From ${price}usd</h6>
